@@ -97,6 +97,7 @@ main {
     height: calc(100vh - 100px);
     width: calc(100vw - 300px);
     background-color: #141922;
+    overflow: auto;
 }
 
 main ul {

@@ -9,12 +9,35 @@
     display: flex;
 }
 
+/* Barra sinistra */
 nav {
     height: calc(100vh - 100px);
     width: 300px;
     background-color: black;
 }
 
+#logo {
+    height: 50px;
+    margin: 20px;
+}
+
+li {
+    color: #646464;
+    margin: 5px;
+}
+
+li img {
+    height: 30px;
+    width: 30px;
+}
+
+#playlist {
+    color: white;
+    margin-top: 20px;
+}
+/* /Barra sinistra */
+
+/* Barra fissata in alto */
 #upgrade {
     position: fixed;
     top: 0;
@@ -23,14 +46,19 @@ nav {
     width: calc(100vw - 300px); 
     background-color: rgba(0, 0, 0, 0.267);
 }
+/* /Barra fissata in alto */
 
+/* Contenuto principale */
 main {
     height: calc(100vh - 100px);
     width: calc(100vw - 300px);
     background-color: #141922;
 }
+/* /Contenuto principale */
 
+/* Barra in basso */
 footer {
     height: 100px;
     background-color: #282828;
 }
+/* /Barra in basso */

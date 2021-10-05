@@ -95,7 +95,7 @@ nav i {
 /* Contenuto principale */
 main {
     height: calc(100vh - 100px);
-    width: calc(100vw - 300px);
+    width: calc(100% - 300px);
     background-color: #141922;
     overflow: auto;
 }
@@ -121,14 +121,20 @@ main h1 {
 .blocks {
     display: inline-block;
     height: 200px;
-    width: 170px;
+    width: calc(100% / 7 - 20px);
     margin-top: 20px;
     margin-left: 20px;
 }
 
 .blocks img {
-    height: 150px;
-    width: 170px;
+    height: auto;
+    width: 100%;
+}
+
+.text-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .blocks h4 {

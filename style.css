@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-main {
+    display: flex;
+}
+
+nav {
+    height: calc(100vh - 100px);
+    width: 300px;
+    background-color: black;
+}
+
+#upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: calc(100vw - 300px); 
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+main {
+    height: calc(100vh - 100px);
+    width: calc(100vw - 300px);
+    background-color: #141922;
+}
+
+footer {
+    height: 100px;
+    background-color: #282828;
+}

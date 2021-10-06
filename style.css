@@ -71,8 +71,8 @@ nav i {
 }
 
 #nav-button img {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
 }
 
 #nav-button li:last-child {
@@ -130,6 +130,7 @@ main h1 {
 }
 
 .blocks {
+    position: relative;
     display: inline-block;
     height: auto;
     width: calc(100% / 7 - 20px);
@@ -208,6 +209,11 @@ footer {
     margin-left: 40px;
 }
 
+#center {
+    width: 400px;
+    text-align: center;
+}
+
 #center i, #right i {
     color: white;
     margin: 10px;
@@ -217,7 +223,85 @@ footer {
     font-size: 30px;
 }
 
+.progress {
+    background-color: #5a5a5a;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #c1c1c1;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
 #right {
+    width: 300px;
     margin-top: 30px;
 }
 /* /Barra in basso */
+
+/* Effetti */
+#upgrade a:hover {
+    padding: 11px 31px 11px 31px;
+    font-size: 11px;
+}
+
+ul li:hover {
+    color: white;
+}
+
+i:hover {
+    color: white;
+}
+
+.blocks i{
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.418);
+    font-size: 50px;
+    opacity: 0;
+}
+
+main i:hover {
+    opacity: 1;
+}
+
+#green {
+    border-bottom: 2px solid #adff2d;
+    color: white;
+    padding-bottom: 5px;
+}
+
+nav ul:nth-child(2) {
+    margin-left: 0;
+}
+
+#home {
+    border-left: 3px solid #adff2d;
+    color: white;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+#nav-header li:nth-child(2),
+#nav-header li:nth-child(3) {
+    margin-left: 15px;
+}
+
+#logo-profilo {
+    background-color: grey;
+    border-radius: 50%;
+}
+/* /Effetti */
+
+#barra {
+    display: flex;
+}
+
+.time-progress {
+    flex-direction: row;
+    color: white;
+}

@@ -183,6 +183,7 @@ footer {
 
 #left {
     margin-top: 25px;
+    margin-left: 20px;
 }
 
 #left img {
@@ -196,7 +197,6 @@ footer {
 
 #left div {
     color: #646464;
-    font-size: 10px;
 }
 
 #text-footer {
@@ -224,20 +224,40 @@ footer {
 }
 
 .progress {
+    height: 5px;
+    width: 80%;
     background-color: #5a5a5a;
     border-radius: 20px;
+    margin-top: 10px;
 }
 
 .progress-bar {
     height: 5px;
     background-color: #c1c1c1;
     border-radius: 20px;
-    margin-top: 15px;
+}
+
+#barra-center {
+    display: flex;
+    justify-content: space-around;
+}
+
+.time-progress {
+    flex-direction: row;
+    color: white;
+    font-size: 12px;
 }
 
 #right {
-    width: 300px;
+    width: 250px;
     margin-top: 30px;
+    margin-right: 10px;
+}
+
+#barra-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 /* /Barra in basso */
 
@@ -255,12 +275,17 @@ i:hover {
     color: white;
 }
 
+.blocks-hover {
+    position: absolute;
+    width: 100%;
+}
+
 .blocks i{
     position: absolute;
     top: 24%;
     left: 35%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgba(0, 0, 0, 0.486);
     font-size: 50px;
     opacity: 0;
 }
@@ -297,11 +322,8 @@ nav ul:nth-child(2) {
 }
 /* /Effetti */
 
-#barra {
-    display: flex;
-}
-
-.time-progress {
-    flex-direction: row;
-    color: white;
+@media screen and (max-with: 1000px) {
+    .blocks {
+        width: calc(100% / 5 - 20px);
+    }
 }

@@ -362,11 +362,24 @@ nav ul:nth-child(2) {
         margin: 10px;
     }
 
-    nav li {
+    nav span {
         display: none;
     }
 
-    nav img {
-        display: inline-block;
+    nav ul {
+        margin-left: 0;
+    }
+
+    #nav-header li:nth-child(2),
+    #nav-header li:nth-child(3) {
+    margin-left: 10px;
+}
+
+    #home {
+        border: 0;
+    }
+
+    #logo-crea-playlist {
+        display: none;
     }
 }

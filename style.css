@@ -23,6 +23,10 @@ nav {
     margin: 20px;
 }
 
+#logo-small {
+    display: none;
+}
+
 nav ul {
     list-style-type: none;
     margin-left: 15px;
@@ -86,7 +90,7 @@ nav i {
     top: 0;
     right: 0;
     height: 100px;
-    width: calc(100vw - 300px); 
+    width: calc(100% - 300px); 
     background-color: rgba(0, 0, 0, 0.452);
 }
 
@@ -335,7 +339,34 @@ nav ul:nth-child(2) {
 }
 
 @media screen and (max-width: 800px) {
-    .blocks {
-        width: calc(100% / 3 - 20px);
+    main {
+        width: calc(100% - 50px);
+    }
+
+    #upgrade {
+        width: calc(100% - 50px);
+    }
+
+    nav {
+        width: 50px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-small {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav img {
+        display: inline-block;
     }
 }

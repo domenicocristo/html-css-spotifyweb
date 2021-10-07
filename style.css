@@ -265,16 +265,21 @@ footer {
     width: auto;
 }
 
-#left h5 {
+#left h4 {
     color: white;
 }
 
-#left div {
+#text-footer div {
     color: #646464;
+    font-size: 13px;
+}
+
+#text-footer div:hover {
+    color: white;
 }
 
 #text-footer {
-    display: inline-block; 
+    display: inline-block;
 }
 
 #icon-footer {
@@ -293,6 +298,9 @@ footer {
 }
 
 #pulsanti {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 55px;
 }
 

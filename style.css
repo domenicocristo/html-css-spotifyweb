@@ -9,6 +9,14 @@
     display: flex;
 }
 
+ul li:hover {
+    color: white;
+}
+
+i:hover {
+    color: white;
+}
+
 /* Barra sinistra */
 nav {
     position: relative;
@@ -47,6 +55,22 @@ nav i {
     color: #a3a3a3;
 }
 
+#nav-header {
+    margin: 0;
+}
+
+#nav-header li:nth-child(1) {
+    border-left: 3px solid #adff2d;
+    color: white;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+#nav-header li:nth-child(2),
+#nav-header li:nth-child(3) {
+    margin-left: 15px; 
+}
+
 #nav-center {
     overflow: auto;
 }
@@ -61,8 +85,8 @@ nav i {
 }
 
 #nav-button {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 100px;
     color: #646464;
     background-color: black;
 }
@@ -81,6 +105,11 @@ nav i {
 
 #nav-button li:last-child {
     color: white;
+}
+
+#logo-profilo {
+    background-color: grey;
+    border-radius: 50%;
 }
 /* /Barra sinistra */
 
@@ -105,6 +134,11 @@ nav i {
     margin-right: 5px;
     text-decoration: none;
 }
+
+#upgrade a:hover {
+    padding: 11px 31px 11px 31px;
+    font-size: 11px;
+}
 /* /Barra fissata in alto */
 
 /* Contenuto principale */
@@ -124,6 +158,12 @@ main ul {
 main li {
     display: inline-block;
     color: #7a7d82;
+}
+
+main ul li:nth-child(1) {
+    border-bottom: 2px solid #adff2d;
+    color: white;
+    padding-bottom: 5px;
 }
 
 main h1 {
@@ -159,7 +199,7 @@ main h1 {
     margin-top: 10px;
 }
 
-.blocks div {
+.text-blocks div {
     color: #646464;
     text-align: center;
     margin-top: 10px;
@@ -266,22 +306,17 @@ footer {
 /* /Barra in basso */
 
 /* Effetti */
-#upgrade a:hover {
-    padding: 11px 31px 11px 31px;
-    font-size: 11px;
-}
 
-ul li:hover {
-    color: white;
-}
 
-i:hover {
-    color: white;
-}
-
-.blocks-hover {
+.blocks-opacity {
     position: absolute;
+    top: 0;
+    height: 200px;
     width: 100%;
+}
+
+.blocks-opacity:hover {
+    background-color: rgba(0, 0, 0, 0.486);
 }
 
 .blocks i{
@@ -289,7 +324,6 @@ i:hover {
     top: 24%;
     left: 35%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.486);
     font-size: 50px;
     opacity: 0;
 }
@@ -298,32 +332,6 @@ main i:hover {
     opacity: 1;
 }
 
-#green {
-    border-bottom: 2px solid #adff2d;
-    color: white;
-    padding-bottom: 5px;
-}
-
-nav ul:nth-child(2) {
-    margin-left: 0;
-}
-
-#home {
-    border-left: 3px solid #adff2d;
-    color: white;
-    padding-left: 10px;
-    margin-left: 0;
-}
-
-#nav-header li:nth-child(2),
-#nav-header li:nth-child(3) {
-    margin-left: 15px;
-}
-
-#logo-profilo {
-    background-color: grey;
-    border-radius: 50%;
-}
 /* /Effetti */
 
 @media screen and (max-width: 1300px) {

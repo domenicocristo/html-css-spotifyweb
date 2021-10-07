@@ -244,13 +244,17 @@ footer {
 }
 
 #text-footer {
-    display: inline-block;
+    display: inline-block; 
 }
 
 #icon-footer {
     display: inline-block;
     color: #797979;
     margin-left: 40px;
+}
+
+#icon-footer i {
+    margin-left: 10px;
 }
 
 #center {
@@ -295,13 +299,12 @@ footer {
 #right {
     width: 250px;
     margin-top: 30px;
-    margin-right: 10px;
+    margin-right: 10px; 
 }
 
 #barra-right {
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 /* /Barra in basso */
 
@@ -311,7 +314,7 @@ footer {
 .blocks-opacity {
     position: absolute;
     top: 0;
-    height: 200px;
+    height: auto;
     width: 100%;
 }
 
@@ -323,17 +326,19 @@ footer {
     position: absolute;
     top: 24%;
     left: 35%;
+    height: 72%;
+    width: 100%;
     color: white;
     font-size: 50px;
     opacity: 0;
-}
+} 
 
-main i:hover {
+main i:hover { 
     opacity: 1;
 }
-
 /* /Effetti */
 
+/* Media Query */
 @media screen and (max-width: 1300px) {
     .blocks {
         width: calc(100% / 5 - 20px);
@@ -356,6 +361,7 @@ main i:hover {
     }
 
     nav {
+        position: relative;
         width: 50px;
     }
 
@@ -378,6 +384,10 @@ main i:hover {
         margin-left: 0;
     }
 
+    #nav-header li:nth-child(1) {
+        padding-left: 6px;
+    }
+
     #nav-header li:nth-child(2),
     #nav-header li:nth-child(3) {
     margin-left: 10px;
@@ -390,4 +400,20 @@ main i:hover {
     #logo-crea-playlist {
         display: none;
     }
+
+    #nav-button {
+        position: absolute;
+        bottom: 0;
+    }
+
+    #nav-button li:first-child {
+        border: none;
+    }
+
+    #nav-button img {
+        height: 25px;
+        width: 25px;
+        margin-left: 7px;
+    }
 }
+/* /Media Query */

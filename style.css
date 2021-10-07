@@ -130,7 +130,7 @@ nav i {
     border: 1px solid white;
     border-radius: 20px;
     padding: 10px 30px 10px 30px;
-    margin-top: 35px;
+    margin-top: 34px;
     margin-right: 5px;
     text-decoration: none;
 }
@@ -175,7 +175,6 @@ main h1 {
 }
 
 .blocks {
-    position: relative;
     display: inline-block;
     height: auto;
     width: calc(100% / 7 - 20px);
@@ -187,6 +186,30 @@ main h1 {
     height: auto;
     width: 100%;
 }
+
+.blocks-opacity {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.blocks-opacity:hover img {
+    opacity: 0.5;
+}
+
+.blocks-opacity:hover i {
+    opacity: 1;
+}
+
+
+.blocks i{
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+} 
 
 .text-blocks {
     display: flex;
@@ -222,12 +245,12 @@ main h1 {
 footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 100px;
     background-color: #282828;
 }
 
 #left {
-    margin-top: 25px;
     margin-left: 20px;
 }
 
@@ -259,7 +282,7 @@ footer {
 }
 
 #center {
-    width: 400px;
+    width: 500px;
     text-align: center;
 }
 
@@ -267,7 +290,8 @@ footer {
     height: 55px;
 }
 
-#center i, #right i {
+#center i,
+#right i {
     color: white;
     margin: 10px;
 }
@@ -282,13 +306,14 @@ footer {
 
 .progress {
     height: 5px;
-    width: 80%;
+    width: 90%;
     background-color: #5a5a5a;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .progress-bar {
+    position: relative;
     height: 5px;
     background-color: #c1c1c1;
     border-radius: 20px;
@@ -307,11 +332,12 @@ footer {
     flex-direction: row;
     color: white;
     font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #right {
     width: 250px;
-    margin-top: 30px;
     margin-right: 10px; 
 }
 
@@ -319,33 +345,15 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
+#barra-right i {
+    margin-right: 20px;
+}
+
+#barra-right .progress{
+    margin-top: 15px;
+}
 /* /Barra in basso */
-
-/* Effetti */
-.blocks-opacity {
-    height: auto;
-    width: 100%;
-}
-
-.blocks-opacity:hover {
-    opacity: 0.5;
-}
-
-.blocks i{
-    position: absolute;
-    top: 24%;
-    left: 35%;
-    height: auto;
-    width: auto;
-    color: white;
-    font-size: 50px;
-    opacity: 0;
-} 
-
-main i:hover { 
-    opacity: 1;
-}
-/* /Effetti */
 
 /* Media Query */
 @media screen and (max-width: 1300px) {

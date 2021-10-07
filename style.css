@@ -40,7 +40,7 @@ nav ul {
     margin-left: 15px;
 }
 
-li {
+nav li {
     color: #646464;
     margin: 5px;
 }
@@ -158,6 +158,7 @@ main ul {
 main li {
     display: inline-block;
     color: #7a7d82;
+    margin: 5px;
 }
 
 main ul li:nth-child(1) {
@@ -262,6 +263,10 @@ footer {
     text-align: center;
 }
 
+#pulsanti {
+    height: 55px;
+}
+
 #center i, #right i {
     color: white;
     margin: 10px;
@@ -269,6 +274,10 @@ footer {
 
 #center i:nth-child(3) {
     font-size: 30px;
+}
+
+#center i:nth-child(3):hover {
+    font-size: 35px;
 }
 
 .progress {
@@ -283,6 +292,10 @@ footer {
     height: 5px;
     background-color: #c1c1c1;
     border-radius: 20px;
+}
+
+.progress-bar:hover {
+    background-color: #adff2d;
 }
 
 #barra-center {
@@ -309,25 +322,21 @@ footer {
 /* /Barra in basso */
 
 /* Effetti */
-
-
 .blocks-opacity {
-    position: absolute;
-    top: 0;
     height: auto;
     width: 100%;
 }
 
 .blocks-opacity:hover {
-    background-color: rgba(0, 0, 0, 0.486);
+    opacity: 0.5;
 }
 
 .blocks i{
     position: absolute;
     top: 24%;
     left: 35%;
-    height: 72%;
-    width: 100%;
+    height: auto;
+    width: auto;
     color: white;
     font-size: 50px;
     opacity: 0;

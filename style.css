@@ -9,6 +9,12 @@
     display: flex;
 }
 
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 ul li:hover {
     color: white;
 }
